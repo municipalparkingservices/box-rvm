@@ -17,7 +17,7 @@ script: |
     echo "bundler -v~>1.5.1" > $HOME/.rvm/gemsets/global.gems
     source $HOME/.rvm/scripts/rvm
     rvm install 2.0.0-p451
-    rvm --default use 2.0.0
+    rvm --default use 2.0.0-p451
     echo "gem: --no-rdoc --no-ri" >> $HOME/.gemrc
     echo "RAILS_ENV=test" | sudo tee -a /etc/environment
     echo "RACK_ENV=test" | sudo tee -a /etc/environment
